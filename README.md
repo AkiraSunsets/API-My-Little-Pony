@@ -20,8 +20,8 @@ Este projeto é uma API RESTful desenvolvida em **FastAPI**, integrada a um **ba
 - ❌ **Excluir** um personagem (`DELETE /mlp/{id}`)
 
 ## 🗂️ Estrutura do projeto
+```bash
 API-MY-LITTLE-PONY/
-│
 ├── api/
 │ └── v1/
 │ ├── endpoints/
@@ -47,6 +47,8 @@ API-MY-LITTLE-PONY/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
+---
 
 ## 💾 Configuração do Banco de Dados (XAMPP / MySQL)
 
