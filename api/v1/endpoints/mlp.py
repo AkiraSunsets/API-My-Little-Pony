@@ -84,7 +84,7 @@ async def delete_mlp(mlp_id: int, db:AsyncSession = Depends(get_session)):
         mlp_del = result.scalar_one_or_none()
 
         if mlp_del:
-            await session.delete(mlp_id)
+            await session.delete(mlp_del)
             await session.commit()
             return Response(status_code=status.HTTP_204_NO_CONTENT)
         

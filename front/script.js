@@ -1,5 +1,5 @@
 async function puxar_api(){
-    await axios.get ("http://localhost:8000/api/v1/mlp/").then((response) => {
+    await axios.get ("http://127.0.0.1:8001/api/v1/mlp/").then((response) => {
         const mlp = response.data;
         const container = document.getElementById("mlp-container")
         mlp.forEach(element => {
