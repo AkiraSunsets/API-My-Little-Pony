@@ -66,19 +66,19 @@ DATABASE_URL = "mysql+aiomysql://root:@localhost/my_little_pony"
 
 ## ▶️ Como executar o projeto
 
-1. Clonar o repositório
+### 1. Clonar o repositório
 - git clone https://github.com/seuusuario/my-little-pony-api.git
 cd my-little-pony-api
 
-2. Criar e ativar o ambiente virtual
+### 2. Criar e ativar o ambiente virtual
 - python -m venv venv
 - venv\Scripts\activate   # Windows
 - source venv/bin/activate  # Linux/Mac
 
-3. Instalar dependências
+### 3. Instalar dependências
 - pip install -r requirements.txt
 
-4. Rodar a API
+### 4. Rodar a API
 - uvicorn app.main:app --reload
 
 
