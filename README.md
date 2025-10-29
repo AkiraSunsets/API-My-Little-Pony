@@ -81,8 +81,7 @@ cd my-little-pony-api
 ### 4. Rodar a API
 - uvicorn app.main:app --reload
 
-
-A API ficará disponível em:
+### A API ficará disponível em:
 - 👉 http://127.0.0.1:8000
 
 ## 📘 Documentação automática
