@@ -8,7 +8,7 @@ from models.mlp_models import MLPModel
 from schemas.mlp_schemas import MLPSchema
 from core.deps import get_session
 
-router = APIRouter
+router = APIRouter()
 
 
 #adiciona novo personagem
@@ -23,7 +23,6 @@ async def post_mlp (mlp: MLPSchema, db: AsyncSession = Depends(get_session)):
                          )
     
     db.add(nova_mlp)
-
     await db.commit()
 
     return nova_mlp
@@ -66,7 +65,7 @@ async def put_mlp(mlp_id: int, mlp: MLPSchema, db:AsyncSession = Depends(get_ses
             mlp_up.nome = mlp.nome
             mlp_up.habilidades = mlp.habilidades
             mlp_up.tipo = mlp.tipo
-            mlp_up.cor = mlp_up.cor
+            mlp_up.cor = mlp.cor
             mlp_up.personalidade = mlp.personalidade
 
             await session.commit()
@@ -77,7 +76,7 @@ async def put_mlp(mlp_id: int, mlp: MLPSchema, db:AsyncSession = Depends(get_ses
 
 
 #deletar um personagem
-@router.delete("/{mlp_id}", status_code=status.HTTP_202_ACCEPTED)
+@router.delete("/{mlp_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_mlp(mlp_id: int, db:AsyncSession = Depends(get_session)):
     async with db as session:
         query = select(MLPModel).filter (MLPModel.id == mlp_id)
