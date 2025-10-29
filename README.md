@@ -3,8 +3,6 @@
 Bem-vindo à **My Little Pony API**!  
 Este projeto é uma API RESTful desenvolvida em **FastAPI**, integrada a um **banco de dados MySQL via XAMPP**, e permite realizar **operações CRUD** (Create, Read, Update e Delete) com personagens do universo *My Little Pony*.
 
----
-
 ## 🚀 Tecnologias utilizadas
 
 - **[FastAPI](https://fastapi.tiangolo.com/)** — framework moderno e rápido para APIs Python  
@@ -13,8 +11,6 @@ Este projeto é uma API RESTful desenvolvida em **FastAPI**, integrada a um **ba
 - **Uvicorn** — servidor ASGI para rodar a aplicação  
 - **Pydantic** — validação e serialização de dados
 
----
-
 ## ⚙️ Funcionalidades
 
 - 🐴 **Criar** um novo personagem (`POST /mlp`)
@@ -22,8 +18,6 @@ Este projeto é uma API RESTful desenvolvida em **FastAPI**, integrada a um **ba
 - 🔍 **Buscar** um personagem por ID (`GET /mlp/{id}`)
 - ✏️ **Atualizar** informações de um personagem (`PUT /mlp/{id}`)
 - ❌ **Excluir** um personagem (`DELETE /mlp/{id}`)
-
----
 
 ## 🗂️ Estrutura do projeto
 API-MY-LITTLE-PONY/
