@@ -93,8 +93,7 @@ O FastAPI gera documentação interativa automaticamente:
 
 ## 🧪 Exemplo de requisição (POST)
 
-
-POST /mlp
+- POST /mlp
 ```bash
 {
   "nome": "Twilight Sparkle",
@@ -103,7 +102,7 @@ POST /mlp
 }
 ```
 
-Resposta (201 Created):
+- Resposta (201 Created):
 ```bash
 {
   "id": 1,
