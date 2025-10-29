@@ -67,53 +67,52 @@ DATABASE_URL = "mysql+aiomysql://root:@localhost/my_little_pony"
 ## ▶️ Como executar o projeto
 
 1. Clonar o repositório
-git clone https://github.com/seuusuario/my-little-pony-api.git
+- git clone https://github.com/seuusuario/my-little-pony-api.git
 cd my-little-pony-api
 
 2. Criar e ativar o ambiente virtual
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Linux/Mac
+- python -m venv venv
+- venv\Scripts\activate   # Windows
+- source venv/bin/activate  # Linux/Mac
 
 3. Instalar dependências
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4. Rodar a API
-uvicorn app.main:app --reload
+- uvicorn app.main:app --reload
 
 
 A API ficará disponível em:
-👉 http://127.0.0.1:8000
+- 👉 http://127.0.0.1:8000
 
 ## 📘 Documentação automática
 
 O FastAPI gera documentação interativa automaticamente:
 
-Swagger UI: http://127.0.0.1:8000/docs
-
-Redoc: http://127.0.0.1:8000/redoc
+- Swagger UI: http://127.0.0.1:8000/docs
+- Redoc: http://127.0.0.1:8000/redoc
 
 ## 🧪 Exemplo de requisição (POST)
 
-POST /mlp
 
+POST /mlp
+```bash
 {
   "nome": "Twilight Sparkle",
   "cor": "Roxo",
   "elemento": "Magia"
 }
-
+```
 
 Resposta (201 Created):
-
+```bash
 {
   "id": 1,
   "nome": "Twilight Sparkle",
   "cor": "Roxo",
   "elemento": "Magia"
 }
-
+```
 ## ❤️ Créditos
-
-Criado com amor e magia por Akira Sunsets✨
-Projeto inspirado em My Little Pony: Friendship is Magic.
+- Criado com amor e magia por Akira Sunsets✨
+- Projeto inspirado em My Little Pony: Friendship is Magic.
